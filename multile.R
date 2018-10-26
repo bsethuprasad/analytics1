@@ -60,7 +60,7 @@ summary(omni)
 
 fit2 = lm(sales ~ price + promotion, data=omni)
 plot(fit2)
-
+fit2
 
 # summary statistics of model IMP STEP
 
