@@ -47,3 +47,18 @@ length(x)
 (m2 = matrix(100:111, nrow=3, byrow='T'))
 m1[1,2]
 m1[1,2:3]
+(rollno =1:30)
+(sname =paste('student',1:30,sep=''))
+(gender = sample(c('M','F'),size=30,replace=T,prob=c(.7,.3)))
+(marks = floor(rnorm(30,mean=50,sd=10)))
+(marks2 = ceiling(rnorm(30,40,5)))
+(course =sample(c('BBA','MBA','Btech'),size=30,replace=T,prob=c(.5,.4,.1)))
+rollno ; sname; gender;marks ;marks2; course
+?ceiling
+signif(3.567334,3)
+(ball=(c('cell','call')))
+sample(ball,size=1)
+df1
+library(dplyr)
+#install.packages(dplyr)
+
