@@ -1,0 +1,15 @@
+#factors
+gender=sample(c('m','f'),size=20,replace=T)
+gender
+summary(gender)
+genderf=factor(gender)
+summary(genderf)
+genderf
+(likscale=sample(c('ex','good','sad','poor'),size=20,replace=T))
+likscale
+summary(likscale)
+likscalef=factor(likscale)
+summary(likscalef)
+like=factor(likscale,ordered=T,levels=c('poor','sat','good','ex'))
+summary(like)
+barplot(table(like),col=1:4)

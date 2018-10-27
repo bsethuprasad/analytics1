@@ -124,3 +124,74 @@ m2[c(1,3,4),]
 m2[,1]
 m2[,2:3]
 m2[c(1,2),c(2,3)]
+m2[1:5]
+m2[2,2]=10
+m2
+cbind(m2,c(55,65,75,25))
+rbind(m2,m2)
+m2
+colSums(m1)
+rowSums(m1)
+cbind(rownames(m1),rowSums(m1))
+sweep(m1,MARGIN=1,STATS=c(2,3,4,5),FUN='+')
+?sweep
+mtcars
+head(mtcars,size=15)
+colMeans(m1)
+sweep(m1,MARGIN=2,STATS=c(2,3,4),FUN='*')
+m1
+addmargins(m1,margin=1,sum)
+addmargins(m1,1,sd)
+addmargins(m1,2,mean)
+addmargins(m1,c(1,2),mean)
+?list
+addmargins(m1,c(1,2),list(list(mean,sum,max),list(var,sd)))
+(rollno = 1:30)
+(student=c('a','b','c','d'))
+(sname = paste('student',1:30,sep=''))
+
+(gender = sample(c('M','F'), size=30, replace=T, prob=c(.7,.3)))
+
+(marks = floor(rnorm(30,mean= 50,sd=10)))
+
+(marks2 = ceiling(rnorm(30,40,5)))
+
+(course = sample(c('BBA','MBA','BTECH'), size=30, replace=T, prob=c(.5,.4,.1)))
+
+rollno; sname; gender; marks ; marks2; course
+
+df1= data.frame(rollno, sname, gender, marks, marks2, course)
+df1
+str(df1)
+summary(df1)
+df1[ ,c(2,4)]
+df1[ marks > 50 & gender=='F', c('rollno', 'sname','gender', 'marks')]
+
+df1[ marks > 50 & gender=='F', c(1,2)]
+
+df1[ marks > 50 | gender=='F', ]
+list(df1$gender)
+aggregate(df1$marks, by=list(df1$rollno), FUN=max)
+aggregate(df1$students,by=list(df1$rollno),FUN=max)
+aggregate(marks ~ gender, data=df1, FUN=max)
+train=70%
+
+
+firstset=df1$student[1:11]
+firstset
+(df2 = aggregate(cbind(marks,marks2) ~ gender + course, data=df1, FUN=mean))
+
+x=1:10
+(index=sample(x,size=.6*length(x)))
+x[index]
+studentname=paste('student',1:1000,sep='-')
+studentname
+x=studentname
+length(x)
+(index=sample(length(x),.6*length(x)))
+(train=x[index])
+length(train)
+(test=x[-index])
+length(test)
+x1=1:10
+

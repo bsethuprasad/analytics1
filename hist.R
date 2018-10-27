@@ -86,7 +86,7 @@ x3.cut
 
 
 (x3a = table(x3.cut))
-
+x3a
 (x3b = cbind(x3a))
 
 
@@ -104,7 +104,7 @@ barplot(x3b, beside=T, names.arg =rownames(x3b))
 plot(x3b)
 
 hist(x3b,breaks=15,col=1:15)
-
+seq(4,15,length.out=15)
 
 
 # and so..on like previous eg

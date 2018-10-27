@@ -81,7 +81,7 @@ hist(x)
 
 
 hist(x, freq=F, col=1:5)
-
+density(x)
 lines(density(x))
 
 
@@ -107,7 +107,7 @@ pie(x)
 xlabels = c('A','B','C','D')
 
 x/sum(x)
-
+round(x/sum(x))
 (labels2 = paste(xlabels, round(x/sum(x),2) * 100 , sep='-'))
 
 pie(x, labels=labels2)
